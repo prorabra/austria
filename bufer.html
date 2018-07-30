@@ -7,22 +7,20 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
 	
 <nav class="navbar navbar-expand-lg">
-  <a class="navbar-brand" href="#"><img src="images/logo2.png"></a>
+  <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item active">
-        <a class="nav-link" href="#">О компании <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Продукция </a>
+        <a class="nav-link" href="#">Продукция <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Гарантия качества </a>
@@ -197,9 +195,40 @@
   </div>
 </nav>
     </div>
-  <div class="col-md-1">
-    <img src="images/byf-emk.png" alt="" class="img-responsive cat-img">
+  
+  <div class="col-md-1 ">
+    <div class="wrapper-cat-img">
+      
+      <a href="images/byf-emk.png" class="img-link">
+        <img src="images/byf-emk.png" alt="" class="img-responsive ">
+      </a>
+      <div class="price">150$</div>
+      <button data-toggle="modal"  data-target=".bs-example-modal-lg">Заказать</button>
+    </div>
   </div>
+
+  <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content mod">
+      <button type="button" id="close2" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <div class="row">
+        <div class="col-md-12">
+          <!-- <form action="form.php" method="post" id="contactFrm" name="contactFrm"> -->
+            <form id="form">
+                    <input type="text" name="subj" value="Заказ" hidden="">
+                        <p><input type="text" required="" placeholder="Ваше имя" value="" name="name" class="txt"></p>
+                        <p><input type="text" required="" placeholder="Телефон" value="" name="phone" id="phone" class="txt"></p>
+                        <p><input type="email" required="" placeholder="Email" value="" name="email" id="email" class="txt"></p>
+                        
+                        
+                         <p><input type="submit" value="Заказать" name="submit" class="txt2" id="btn1"></p>
+                         
+          </form>
+        </div>        
+      </div>
+    </div>
+  </div>
+</div>
   <div class="col-md-8 ml-sm-auto col-lg-8 px-4 content contentCat">
     <img src="images/byf-emk.png" alt="" class="cat img-responsive">
     <p class="caption">Буферные емкости</p>
@@ -250,6 +279,8 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+<script src="js/script.js"></script>
 <!-- <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="js/script.js"></script> -->

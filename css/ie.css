@@ -4,32 +4,6 @@ body{
 	background: #f4f4f4;
   font-size: 14px;
 }
-.links  {
-  margin: auto;
-  width: 80%;
-}
-a.nav-link, a.collapsed, li.active a, a.active,
-.sub-menu li a {
-  text-decoration: none;
-  position: relative;
-}
-a.nav-link::before, a.collapsed::before, li.active a::before, a.active::before,
-.sub-menu li a::before {
-  content: '';
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background-color: #000;
-  transition: 0.2s;
-}
-a.nav-link:hover:before, a.collapsed:hover:before, li.active a:hover:before, a.active:hover:before,
-.sub-menu li a:hover:before {
-  width: 100%;
-  left: 0;
-}
-
 /*.loader {
   background: no-repeat scroll 0 0 #fff;
   top: 0;
@@ -64,39 +38,10 @@ a.nav-link:hover:before, a.collapsed:hover:before, li.active a:hover:before, a.a
   transform: translate(-50%,-50%);
 }*/
 .loader{
-  /*margin: 0;
-  padding: 0;
-  text-transform: uppercase;
-  font-size: 10em;*/
-  color: rgba(255, 255, 255, .1);
-  background-image: url(../images/water.png);
-  background-repeat: repeat-x;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
- /* text-fill-color: transparent;
--webkit-text-fill-color: transparent;*/
-  /*-webkit-background-clip: text;*/
-  /*animation: animate 15s  linear infinite;*/
-  -webkit-animation: animate 15s  linear infinite;
-  -o-animation: animate 15s  linear infinite;
-  animation: animate 15s  linear infinite;
-
-}
-@keyframes animate{
-  0%{
-    background-position: left 0px top 0px;
+  
+  color: #000;
+  background-image: none;
   }
-  40%{
-    background-position: left 800px top -50px;
-  }
-  80%{
-    background-position: left 1800px top -50px;
-  }
-  100%{
-    background-position: left 2400px top 80px;
-  }
-}
 .wave{
   position: relative;
   width: 100%;
@@ -517,9 +462,9 @@ div#navbarNavFooter{
 	font-size: 14px;
 	color: #3a3a3a;
 }
-/*#navbarNav a.nav-link:hover{
+#navbarNav a.nav-link:hover{
   text-decoration: underline;
-}*/
+}
 ul.navbar-nav.mr-auto.mt-2.mt-lg-0 li.nav-item::before{
 	content:'|';
 	    float: left;
@@ -585,14 +530,10 @@ hr{
   text-transform: uppercase;
 }
 a.category-link, a.info-link {
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
 }
 a.category-link img {
     max-width: 30%;
@@ -666,11 +607,6 @@ p.sert-title {
     box-shadow: 0px 0px 20px #8a8a8a;
     box-sizing: content-box;
     width: 100%;
-        display: flex;
-    flex-direction: column;
-}
-.wrapper-cat-img a{
-      text-align: center;
 }
 .wrapper-cat-img img{
   max-width: 100%;
@@ -678,21 +614,16 @@ p.sert-title {
 .price {
     text-align: center;
     font-size: 30px;
-        margin: 0 -20px;
 }
 .wrapper-cat-img button, input#btn1 {
     border: none;
     background: transparent;
     box-shadow: 0px 0px 8px 0px grey;
-    padding: 10px 20px;
-    margin: 0 -20px;
-    text-align: center;
-    width: 100%;
-    box-sizing: content-box;
+    padding: 10px 30px;
+    margin: 0 0 0 -22px;
 }
 input#btn1{
   margin: 0;
-  width: auto;
 }
 input.txt {
     box-shadow: 0px 0px 8px 0px grey;
@@ -823,14 +754,13 @@ button#close2{
   .wrapper-cat-img button {
     
     margin: 0px 0 0 -32px;
-        padding: 10px 43px 10px 20px;
 }
 .price{
       margin: 0px -20px;
 }
-/*.wrapper-cat-img button {
+.wrapper-cat-img button {
     margin: 0px 0 0 -45px;
-}*/
+}
 #form {
     width: 100%;
 }
@@ -882,7 +812,7 @@ ul.navbar-nav.mr-auto.mt-2.mt-lg-0 li.nav-item::before{
     margin-left: 0;
 }
 .wrapper-cat-img button {
-    /*margin: 0 auto;*/
+    margin: 0 auto;
     width: 100%;
 }
 .modal-content.mod {
@@ -894,10 +824,5 @@ ul.navbar-nav.mr-auto.mt-2.mt-lg-0 li.nav-item::before{
         .wrapper-cat-img{
           width: 45%;
         }
-        .wrapper-cat-img button {
-    margin: 0px 0 0 -18px;
-    width: 100%;
-    padding: 20px;
-}
       }
 
